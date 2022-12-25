@@ -356,9 +356,9 @@ gap: 30px;
 
 .footer-link:hover,
 .footer-link:focus,
-.header-link:hover,
-.header-link:focus,
-.header-link-blue:hover,
-.header-link-blue:focus {
+.header-link-contacts:hover,
+.header-link-contacts:focus,
+.footer-link-gl:hover,
+.footer-link-gl:focus {
   color: #2196f3;
 }
