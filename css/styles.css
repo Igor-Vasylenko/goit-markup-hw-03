@@ -69,11 +69,14 @@ img {
   display: flex;
   gap: 50px;
 }
+
 .header-logo {
   margin-right: 93px;
 }
 .header {
   background-color: var(--decoration2-color);
+  border-bottom: 1px solid 
+    #ECECEC;
 }
 .header-logo {
   font-family: "Raleway";
@@ -106,14 +109,17 @@ img {
   letter-spacing: 0.02em;
   color: var(--decoration-color);
 }
-.line {border: 1px solid 
-  #ECECEC
- }
+.header-link-contacts {
+  color: var(--secondary-text-color);
+  }
+
 /*Main-webstudio*/
 /*Hero*/
 
 .hero {
   background-color: var(--footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -123,8 +129,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--decoration2-color);
-  margin-top: 200px;
-  
+ 
 }
 .hero-btn {
   width: 216px;
@@ -135,19 +140,19 @@ img {
   line-height: 30px;
   padding: 10px 32;
   border-radius: 4px;
+  border: none;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--decoration2-color);
   cursor: pointer;
   margin-top: 30px;
-  margin-bottom: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 94px;
   }
 .hero-title{
   width: 696px;
@@ -156,10 +161,11 @@ img {
 /*Specialties*/
 .specialties {
   background-color: var(--header-color);
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .specialties-container{
   display: flex;
-  margin-bottom: 94px;
   }
 .specialties-list{
    display: flex;
@@ -184,11 +190,9 @@ img {
 /*Our work*/
 .work {
   background-color: var(--header-color);
+  padding-bottom: 94px;
   }
-.work-container{
-    margin-bottom: 94px;
-      }
-.work-title{
+.work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -205,15 +209,13 @@ img {
 /*Our team*/
 .team {
   background-color: var(--btn-bckg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
  }
  .team-container{
   display: flex;
   flex-direction: column;
   }
-.team-item-container{
-  display: flex;
-  margin-bottom: 94px;
-}
  .team-title{
   font-weight: 700;
   font-size: 36px;
@@ -221,10 +223,11 @@ img {
   text-align: center;
   color: var(--primery-text-color);
   margin-bottom: 50px;
-  margin-top: 94px;
-}
+  }
 .team-item {
   background-color: var(--header-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   }
 .team-list{
 display: flex;
@@ -246,6 +249,7 @@ gap: 30px;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
 }
+/*Portfolio*/
 /*Main-btn*/
 .portfolio {
   background-color: var(--decoration2-color);
@@ -260,7 +264,7 @@ gap: 30px;
   background-color: var(--btn-bckg-color);
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 56px;
+  border: none;
 }
 .btn:hover,
 .btn:focus {
@@ -271,6 +275,7 @@ gap: 30px;
   display: flex;
   justify-content: center;
   gap: 8px;
+ padding: 50px;
 }
 
 /*Main-img*/
@@ -278,19 +283,14 @@ gap: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
 }
-
+.portfolio-item-p {
+  background-color: var(--header-color);
+}
 .portfolio-item-p{
   display: flex;
   flex-direction: column;
   flex-basis: calc((100% - 30px*2) / 3);
- 
-}
-.border{
-  padding: 20px 24px;
-  border: 1px solid 
-  #EEEEEE;
 }
 .portfolio-title-p {
   font-weight: 700;
@@ -299,19 +299,22 @@ gap: 30px;
   letter-spacing: 0.06em;
   color: var(--primery-text-color);
   margin-bottom: 4px;
-  
-}
+  }
 .portfolio-text-p {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--secondary-text-color);
-}
-.portfolio-item-p {
-  background-color: var(--header-color);
-}
+   }
+ .border{
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top: 0;
+  }
 /*Footer*/
 .footer {
   background-color: var(--footer-color);
+ padding-top: 60px;
+ padding-bottom: 60px;
 }
 .footer-container{
   display: flex;
@@ -323,7 +326,6 @@ gap: 30px;
   font-size: 26px;
   line-height: calc(31 / 26);
   color: #2196f3;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 .change-footer {
@@ -339,8 +341,7 @@ gap: 30px;
   font-style: normal;
   line-height: calc(24 / 14);
   color: var(--decoration2-color);
-  margin-bottom: 9px;
-}
+  }
 .footer-link {
   font-weight: 400;
   font-style: normal;
@@ -348,9 +349,10 @@ gap: 30px;
   color: var(--decoration3-color);
  
 }
-.footer-list:last-child {
+.footer-list-item:nth-child(2) {  
   margin-top: 9px;
-  margin-bottom: 60px;}
+  margin-bottom: 9px;
+  }
 
 .footer-link:hover,
 .footer-link:focus,
