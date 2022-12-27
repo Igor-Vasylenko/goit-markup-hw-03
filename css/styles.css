@@ -109,6 +109,10 @@ img {
 }
 .header-link-contacts {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
 }
 
 /*Main-webstudio*/
@@ -275,7 +279,9 @@ img {
   gap: 8px;
   padding: 50px;
 }
-
+.portfolio-btn {
+  padding: 6px 22px;
+}
 /*Main-img*/
 .portfolio-list-p {
   display: flex;
